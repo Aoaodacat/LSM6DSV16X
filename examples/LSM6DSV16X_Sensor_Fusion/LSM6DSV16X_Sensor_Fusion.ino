@@ -45,6 +45,8 @@ void setup()
   AccGyr.begin();
   AccGyr.Enable_X();
   AccGyr.Enable_G();
+  AccGyr.Enable_G_Bias();
+
 
   // Enable Sensor Fusion
   status |= AccGyr.Set_X_FS(4);
